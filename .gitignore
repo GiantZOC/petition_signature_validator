@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+venv/
+
+# Inputs and outputs contain personal data (names, addresses, signatures) and must never be committed
+*.pdf
+petition_signers*.csv
+.page_cache/
