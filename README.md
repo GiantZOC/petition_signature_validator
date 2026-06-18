@@ -51,3 +51,13 @@ python geofence_addresses.py test
 Input PDFs and all generated CSVs contain personal data (names, addresses,
 signatures) and are gitignored — never commit them. Replace `district76.geojson`
 with the boundary file for your own district.
+
+## TODO
+
+- Validate `date_of_signing` on each signer row (e.g. falls within the
+  petition circulation window, not in the future, parses as a real date).
+- Flag signer rows with missing required data (name, address, city, zip, or
+  date) so they can be reviewed instead of silently passed downstream.
+- Validate the circulator signature/date block at the bottom of each petition
+  page (`circulator_name`, `circulator_address`, `circulator_date` present
+  and the date is on/after the last signature date on that page).
