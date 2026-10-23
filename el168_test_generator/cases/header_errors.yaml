@@ -1,0 +1,9 @@
+seed: 1004
+expected:
+  notes: "Candidate/header extraction failures"
+defects:
+  - type: wrong_district
+    value: "77"
+    jurisdiction: "77th Assembly District"
+  - type: wrong_election_date
+    value: "11/04/2026"

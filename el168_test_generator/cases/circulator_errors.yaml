@@ -1,0 +1,6 @@
+seed: 1003
+expected:
+  notes: "Circulator certification failure cases"
+defects:
+  - type: missing_circulator_signature
+  - type: missing_circulator_address

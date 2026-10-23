@@ -1,0 +1,38 @@
+seed: 1002
+
+expected:
+  notes: >
+    Synthetic mixed-case page. Legal validity is intentionally not encoded;
+    use current Wisconsin rules in the validator.
+
+defects:
+  - type: missing_date
+    row: 1
+
+  - type: wrong_municipality_type
+    row: 3
+    value: Village
+
+  - type: crossed_out_signature
+    row: 4
+
+  - type: po_box_only
+    row: 5
+    value: "PO Box 432"
+
+  - type: illegible_field
+    row: 6
+    field: printed_name
+
+  - type: signer_after_circulator
+    row: 7
+
+  - type: overwrite_date
+    row: 8
+    value: "05/11/2026"
+
+  - type: skew
+    degrees: 0.55
+
+  - type: blur
+    radius: 0.35
